@@ -12,7 +12,7 @@
 	        boolean termino=false;
 	        System.out.println("Bienvenido: \n");
 	        Scanner entrada=new Scanner(System.in);
-	        int err=1,err2=1,desarrolla=0,err3=1;
+	        int err=1,err2=1,desarrolla=0,err3=1;//variables para la programacion defensiva
 	        int table=0;
 	        
 	        while(err==1){// programacion de defensiva, en caso de que el usuario introduzca una opcion fuera del rango
@@ -66,7 +66,7 @@
 	                
 	            	}
 	                err3=1;
-	                if(intersec==1){
+	                if(intersec==1){//indica el tipo de intercepto
 	                	desarrollador.interseccion(true, true, false);
 	                }else if(intersec==2){
 	                	desarrollador.interseccion(true, false, true);
